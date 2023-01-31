@@ -20,15 +20,14 @@ app.get("*", function (req, res) {
   res.sendFile(path.join(DIST_DIR, "taskpane.html"));
 });
 
-//app.listen(PORT);
-const options = {
+app.listen(PORT);
+/*const options = {
     key: fs.readFileSync("server.key"),
     cert: fs.readFileSync("server.cert"),
   };
     
-  // Creating https server by passing
-  // options and app object
+  
   https.createServer(options, app)
   .listen(3000, function (req, res) {
     console.log("Server started at port 3000");
-  });
+  });*/
